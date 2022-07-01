@@ -16,7 +16,7 @@ function getPizzaOrder(size, crust, ...toppings){
   for(let topping of toppings ){
     order += '${topping}'
   }
-  console.log(`${toppings} ... coming up!`);
+  console.log(`${order} ... coming up!`);
   return [size, crust, toppings]
 }
 
