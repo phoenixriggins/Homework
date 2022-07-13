@@ -231,7 +231,8 @@ let users = [
   }
 ]
 // create and print list of phone #s
-users.forEach((numbers) => console.log(users.phone))
+let newArrPhone = users.map((numbers) => numbers.phone)
+console.log(newArrPhone)
 // create and print list of website and email pairs
 const newArr = []
 users.forEach((arr1) => {
@@ -240,7 +241,8 @@ users.forEach((arr1) => {
 
   newArr.push(`${site} and ${mail}`);
 })
-let toDo = [
+console.log(newArr)
+let toDos = [
   {
     "userId": 1,
     "id": 1,
@@ -1443,11 +1445,11 @@ let toDo = [
   }
 ]
 //create list of user 9s to-dos
-const toDos = []
-toDo.map(function(userId, 9, completed, false));
+let user9 = toDos.filter((toDo) => toDo.userId == 9);
 
 //find number of user 9s incomplete tasks
-
+let user9in = user9.filter((toDo) => toDo.completed == false);
+console.log(user9in.length);
 let post = [
   {
     "userId": 1,
@@ -2051,6 +2053,9 @@ let post = [
   }
 ]
 //create list of user 5s posts
-
+let user5 = post.filter((posts) => post.userId == 5);
 //create list of title and body pairs.
-
+post.forEach((array1) => {
+  let xTitle = array1.title;
+  let xBody = array1.body;
+})
